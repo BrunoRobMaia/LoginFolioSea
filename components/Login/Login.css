@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --azul-sea: #0057ff;
+    --azul-claro: #e9f2f9;
+    --branco-sea: white;
+    --fonte: 'Montserrat', sans-serif;
+}
+
+.login {
+    background-image: url(../Imagens/Background.svg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: var(--fonte);
+}
+
+.logo {
+    width: 30%;
+}
+
+.cadastro {
+    background-color: var(--branco-sea);
+    width: 70%;
+    height: 90vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 16px;
+}
+
+.barra {
+
+    height: 5px;
+    background-color: var(--azul-sea);
+    margin: 2em;
+    border-radius: 10px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    align-items: center;
+    margin: 1em;
+}
+
+.label_name {
+    align-self: flex-start;
+    margin-left: 25px;
+    font-weight: 700;
+}
+
+.svg_button {
+    color: var(--azul-sea);
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.input_style {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    width: 90%;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.input-wrapper {
+    display: flex;
+    background-color: var(--azul-claro);
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: var(--fonte);
+}
+
+.checkbox {
+    font-weight: 700;
+    font-size: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    font-family: var(--fonte);
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 30px;
+}
+
+.checkbox_con {
+    display: flex;
+    align-items: center;
+}
+
+.senha_esquecida {
+    color: var(--azul-sea);
+    font-weight: 700;
+}
+
+.boton {
+    font-family: var(--fonte);
+}
+
+.sociais {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 32px;
+    margin: 1em;
+    color: var(--azul-sea);
+}
+
+.sociais_texto {
+    color: var(--azul-sea);
+    font-family: var(--fonte);
+    font-size: 10px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.conta {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.botao_conta {
+    color: var(--azul-sea);
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .login {
+        grid-template-columns: 100%;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .cadastro {
+        height: 80%;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 70%;
+    }
+
+    .titulo {
+        margin-top: 10px;
+    }
+
+    .cadastro {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .barra {
+        margin: 1em;
+    }
+
+    .label_name {
+        margin-left: 10px;
+    }
+
+    .input_style {
+        width: 80%;
+    }
+
+    .input-wrapper {
+        width: 90%;
+    }
+
+    .checkbox {
+        margin-left: 15px;
+    }
+
+    .sociais {
+        font-size: 24px;
+        margin: 0.5em;
+    }
+
+    .sociais_texto {
+        font-size: 8px;
+        margin-top: 5px;
+    }
+
+    .conta {
+        font-size: 8px;
+    }
+}
